@@ -10,22 +10,22 @@ package  LinkedList;
 //    }
 //}
 
-public class Basissss{
-    static void main() {
-
-        Node head  = null;
-        Node newnode1 = new Node(10);
-        Node newnode2 = new Node(12);
-        Node newnode3 = new Node(14);
-        Node newnode4 = new Node(16);
-        Node newnode5 = new Node(18);
-
-        head = newnode1;
-        newnode1.next = newnode2;
-        newnode2.next = newnode3;
-        newnode3.next = newnode4;
-        newnode4.next =  newnode5;
-        newnode5.next = null;
+//public class Basissss{
+//    static void main() {
+//
+//        Node head  = null;
+//        Node newnode1 = new Node(10);
+//        Node newnode2 = new Node(12);
+//        Node newnode3 = new Node(14);
+//        Node newnode4 = new Node(16);
+//        Node newnode5 = new Node(18);
+//
+//        head = newnode1;
+//        newnode1.next = newnode2;
+//        newnode2.next = newnode3;
+//        newnode3.next = newnode4;
+//        newnode4.next =  newnode5;
+//        newnode5.next = null;
 
         //insertion at benginin++++++++++++++
 
@@ -107,22 +107,22 @@ public class Basissss{
 //        }
 //
 //        head = head.next;
-
-         Node curr = head;
-         while(curr.next.next != null){
-        curr = curr.next;
-
-         }
-
-               curr.next = null;
-
-        Node curr1 = head;
-        while(curr1 != null){
-            System.out.println(curr1.data);
-            curr1 = curr1.next;
-        }
-
-
-
-    }
-}
+//
+//         Node curr = head;
+//         while(curr.next.next != null){
+//        curr = curr.next;
+//
+//         }
+//
+//               curr.next = null;
+//
+//        Node curr1 = head;
+//        while(curr1 != null){
+//            System.out.println(curr1.data);
+//            curr1 = curr1.next;
+//        }
+//
+//
+//
+//    }
+//}
