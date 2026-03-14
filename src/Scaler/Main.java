@@ -6,6 +6,8 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
     static void main() throws  Exception{
@@ -53,8 +55,9 @@ public class Main {
         //Bounded waiting --no thread will have to wait indefedily
         //4.No buay waiting --conditon check ke liye wait karta rehta hai, cpu waste hota ahu baki process slow ho jatehai
         Count c = new Count();
+        Lock lock =  new ReentrantLock();
 
-        Thread t1 = new Thread(new Adder(c));
+        Thread t1 = new Thread(new Adder(c)); //,lock
         Thread t2 = new Thread(new Subtractor(c));
 
         t1.start(); //t1 c.value ko ++ karega
