@@ -46,13 +46,13 @@ public class Main {
 
         //synchronization problem happens when two thread work on same data at same time
         //1.critical section more than 1 thread data share akre
-        //2.race condioton ---more than 1 threads is competing with each other,whwn more than 1 thread is in critiacal section at the same time
-        //3.premption -- ek thread ko rok deta hai
+        //2.race condioton ---more than 1 threads is competing with each other,whwn more than 1 thread is in critiacal section at the same time, when two ot more process try to accessa nf modify data at same timt
+        //3.premption -- ek thread ko rok deta hai,or dusrre ko proiroy deta hai
 
         //what a good soln of sync should be
         //1.Mutual exclution -- only one thread should be there in cs ata same time
         //2.progress --overall system shoutl keeo on working
-        //Bounded waiting --no thread will have to wait indefedily
+        //Bounded waiting --no thread will have to wait indefedily, wvwy process should at fair chance to enter cirtical section
         //4.No buay waiting --conditon check ke liye wait karta rehta hai, cpu waste hota ahu baki process slow ho jatehai
         Count c = new Count();
         Lock lock =  new ReentrantLock();
