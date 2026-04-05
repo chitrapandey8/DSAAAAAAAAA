@@ -1,0 +1,16 @@
+verion 0
+
+Implement the bird class which whill have some attributes  and behaviour
+
+///attributes
+{
+colour, type, sound, countryoforigin
+}
+//behaviour
+{
+eat, fly, makesound
+}
+
+version 1
+
+i will have abstract class and a abstact method that will only be defined in parent, the child will impement it
